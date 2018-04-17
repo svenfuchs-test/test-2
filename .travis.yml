@@ -4,9 +4,10 @@ notifications:
 env:
   - FOO=1
   - FOO=2
+conditions: v1
 jobs:
   include:
     - stage: Yo!
       script: echo stages
-      # on v0 this would produce a parse error, which currently returns `true`, and thus passes
-      if: branch NOT IN (sf-stages-passing)
+      # this is a parse error on v1, and should not produce a stage anymore
+      if: branch NOT (sf-stages-passing)
