@@ -8,4 +8,4 @@ jobs:
   include:
     - stage: Yo!
       script: echo stages
-      if: branch = sf-stages-passing
+      if: branch != sf-stages-passing
