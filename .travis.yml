@@ -1,10 +1,10 @@
 script: true
 notifications:
   email: false
-conditions: v1
 env:
   - FOO=1
   - FOO=2
+conditions: v1
 jobs:
   include:
     - stage: Yo!
