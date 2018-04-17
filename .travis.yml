@@ -1,6 +1,7 @@
 script: true
 notifications:
   email: false
+conditions: v1
 env:
   - FOO=1
   - FOO=2
