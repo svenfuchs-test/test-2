@@ -1,6 +1,4 @@
-language: ruby
-dist: trusty
-script: 'echo FOO=$FOO'
+script: true
 jobs:
   include:
     - title: pommes
