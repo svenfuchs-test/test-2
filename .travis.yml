@@ -4,8 +4,4 @@ script: 'echo FOO=$FOO'
 jobs:
   include:
     - title: pommes
-      env: 
-        FOO=foo
     - title: mayo
-      env:
-        FOO=bar
