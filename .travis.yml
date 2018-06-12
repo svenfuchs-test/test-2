@@ -1,5 +1,4 @@
 script: true
-jobs:
-  include:
-    - title: pommes
-    - title: mayo
+env:
+  FOO: foo
+  FOO: bar
