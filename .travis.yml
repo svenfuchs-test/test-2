@@ -2,7 +2,7 @@ conditions: v1
 jobs:
   include:
   - script: echo foo
-    if: branch != master
+    if: branch = master
   - script: echo bar
-    if: (branch != master)
+    if: ((branch = master))
   - script: echo baz
