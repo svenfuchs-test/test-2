@@ -1,4 +1,8 @@
-script: true
-env:
-  FOO: foo
-  FOO: bar
+conditions: v1
+jobs:
+  include:
+  - script: echo foo
+    if: branch != master
+  - script: echo bar
+    if: (branch != master)
+  - script: echo baz
