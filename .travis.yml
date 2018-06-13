@@ -1,8 +1,9 @@
 conditions: v1
 jobs:
   include:
-  - script: echo foo
+  - name: one
+    script: echo foo
     if: branch = master
-  - script: echo bar
+  - name: two
+    script: echo bar
     if: ((branch = master))
-  - script: echo baz
