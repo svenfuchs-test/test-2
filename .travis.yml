@@ -1,3 +1,4 @@
+version: '= 0'
 conditions: v1
 jobs:
   include:
