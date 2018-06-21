@@ -5,4 +5,4 @@ jobs:
   - script: echo foo
     if: branch = master
   - script: echo bar
-    if: ((branch = master))
+    if: ((branch = foo))
