@@ -1,13 +1,9 @@
 version: '= 0'
-conditions: v1
 jobs:
   include:
   - name: one
     script: echo foo
-    if: branch = master
   - name: two
     script: echo bar
-    if: ((branch = master))
   - name: two
-    script: echo bar
-    if: ((branch = master))
+    script: echo baz
