@@ -1,4 +1,7 @@
 version: '= 0'
+conditions: v1
+env:
+  - FOO=foo
 jobs:
   include:
   - name: one
@@ -7,3 +10,4 @@ jobs:
     script: echo bar
   - name: two
     script: echo baz
+    if: ENV(FOO) = foo
