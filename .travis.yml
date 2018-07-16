@@ -6,6 +6,7 @@ install: skip
 
 jobs:
   include:
+    - script: echo unconditional
     - script: echo $FOO
       if: env(FOO) = branch
       env: FOO=master
