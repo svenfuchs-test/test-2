@@ -9,7 +9,7 @@ jobs:
     - script: echo unconditional
     - script: echo $FOO
       if: env(FOO) = branch
-      env: FOO=master
+      env: FOO=master BAR=bar
     - script: echo $FOO
       if: env(FOO) = branch
-      env: FOO=other
+      env: FOO=other BAR=bar
