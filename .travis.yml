@@ -3,7 +3,8 @@ conditions: v1
 
 language: generic
 install: skip
+script: echo "$FOO"
 
 env:
 - FOO="foo bar"
-- BAR='"bar baz"'
+- FOO='"foo bar"'
