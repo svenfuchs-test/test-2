@@ -1,13 +1,14 @@
-version: '= 0'
+# version: '= 0'
 conditions: v1
+
+language: generic
+install: skip
+
 jobs:
   include:
-  - name: one
-    script: echo foo
-  - name: two
-    script: echo bar
-  - name: two
-    script: echo baz
-    if: ENV(FOO) = foo
-    env:
-    - FOO=foo
+    - script: echo $FOO
+      if: env(FOO) = branch
+      env: FOO=master
+    - script: echo $FOO
+      if: env(FOO) = branch
+      env: FOO=other
