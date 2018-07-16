@@ -4,12 +4,6 @@ conditions: v1
 language: generic
 install: skip
 
-jobs:
-  include:
-    - script: echo unconditional
-    - script: echo $FOO
-      if: env(FOO) = branch
-      env: FOO=master BAR=bar
-    - script: echo $FOO
-      if: env(FOO) = branch
-      env: FOO=other BAR=bar
+env:
+- FOO="foo bar"
+- BAR='"bar baz"'
