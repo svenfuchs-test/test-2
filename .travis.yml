@@ -1,12 +1,10 @@
 # version: '= 0'
-conditions: v1
+# conditions: v1
 
 language: generic
 install: skip
-script: 
-- echo "$FOO"
-- echo "$BAR"
+script: true
 
-env:
-- FOO="foo bar" BAR="bar baz"
-- FOO='"foo bar"' BAR='"bar baz"'
+jobs:
+  include:
+    - name: "hola, job names"
