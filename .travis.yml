@@ -4,10 +4,3 @@
 language: generic
 install: skip
 script: true
-
-jobs:
-  include:
-    - stage: One
-      name: "hola, job names"
-    - stage: Two
-      name: "job names indeed"
