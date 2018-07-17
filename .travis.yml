@@ -8,3 +8,4 @@ script: true
 jobs:
   include:
     - name: "hola, job names"
+    - name: "job names indeed"
