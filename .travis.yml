@@ -1,5 +1,4 @@
 # version: '= 0'
-conditions: v0
 
 language: generic
 install: skip
