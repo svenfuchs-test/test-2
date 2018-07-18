@@ -1,6 +1,17 @@
 # version: '= 0'
-# conditions: v1
+conditions: v0
 
 language: generic
 install: skip
 script: true
+
+env:
+  global:
+    - FOO=master
+    
+jobs:
+  include:
+    - name: one
+      if: env(FOO) = branch
+    - name: two
+      if: env(FOO) != branch      
