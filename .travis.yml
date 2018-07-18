@@ -15,4 +15,4 @@ jobs:
       if: env(FOO) = branch
     - name: two
       script: echo two
-      if: env(FOO) != branch      
+      if: env(FOO) != branch
