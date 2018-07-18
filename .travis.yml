@@ -3,7 +3,6 @@ conditions: v0
 
 language: generic
 install: skip
-script: true
 
 env:
   global:
@@ -12,6 +11,8 @@ env:
 jobs:
   include:
     - name: one
+      script: echo one
       if: env(FOO) = branch
     - name: two
+      script: echo two
       if: env(FOO) != branch      
