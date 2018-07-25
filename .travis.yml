@@ -6,6 +6,7 @@ install: skip
 env:
   global:
     - FOO=master
+    - BAR
     
 jobs:
   include:
