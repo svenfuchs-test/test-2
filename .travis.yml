@@ -1,8 +1,10 @@
 # wa{t::kaputt?^%!??
 
 sudo: false
-notifications:
-  email: false
-script: 
-  - 'echo -e "TRAVIS_PULL_REQUEST: $TRAVIS_PULL_REQUEST\nTRAVIS_PULL_REQUEST_BRANCH: $TRAVIS_PULL_REQUEST_BRANCH\nTRAVIS_PULL_REQUEST_SHA: $TRAVIS_PULL_REQUEST_SHA\nTRAVIS_PULL_REQUEST_SLUG: $TRAVIS_PULL_REQUEST_SLUG"'
-
+script: echo $FOO
+jobs:
+  include:
+    - env: FOO=foo
+      if: branch = foo
+    - env: FOO=WAT
+      if: branch = master
