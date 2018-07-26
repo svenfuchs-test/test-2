@@ -2,6 +2,9 @@
 
 sudo: false
 script: echo $FOO
+env:
+  global:
+    - secure: "axz0T7VEpJEzdc4AJR87mqxXYc0NhlXQuAXInzLi2ORJzQWo5ZPpFznAn2haXVqm/Ryz+rdW02agiOcVovGdvxxpn5kVSo36DQYlX9p+xymYszVFkF9hraZzlGFOa4PNk40oYNmL35bGh/v6AsT8xAjt/EGdP/p4UKfRp2Etdy4kCflZc0MeRtmba3JJWjWaR9MdPzusErMRVBDwDHL565ymR4+ZbXsJU+JHC1w9YZbHIJwW7CsuL7guiVC8GDCT5fzwWpi7D3PbqFbQcTwMINz+SI4ArVfX1Lj63UYzJpxWu5hjjH66CI8N5UOOxSjpZbTjlHVUcM1gPId568zbbj+UOqfjTk+hm4ldLTP1TJYksE75ugnhvSwNfkH6oyHRL3SKKkbYjcVbeX6n4lLDDHGEKCaceb6SIPR/7AYrAqPo6saSnn5M9Fw5SVn+XfBjNEsK30iK3PfYpyAPfHXwZfJBY+LP6LoR7052oRG8PU8zbPSET+DBme73fBzgQqdKib60sIuZy+8rEp5xiO+Q4zSS5AYvpMGIP6zENfolp3/Fl07CZa2+JGK5Q/8g1lbykiy/vv4lFJvt/0IzVsNFELO2kmK4R5hD/ruiuXjvrXUZFW+x4aKdm9+zhvUew4ou2TYUWMd2X940E/jcYz7Ge+DTANmOH0Sz55VGY3Cn1S4="
 jobs:
   include:
     - env: FOO=foo
